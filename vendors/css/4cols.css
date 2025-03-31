@@ -2,19 +2,22 @@
 
 	
 .span_4_of_4 {
-	width: 100%; 
+	width: 25%; 
 }
 
 .span_3_of_4 {
-	width: 74.6%; 
+	width: 25%; 
+	padding-top: 22px;
 }
 
 .span_2_of_4 {
-	width: 49.2%; 
+	width: 25%; 
+	padding: 22px;
 }
 
 .span_1_of_4 {
-	width: 23.8%; 
+	width: 25%; 
+	height: 10%;
 }
 
 

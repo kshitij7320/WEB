@@ -101,9 +101,15 @@ h1 {
     border-bottom: 1px solid #e67e22;
 
 }
-.row-column{
+.row{
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    width: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.row-r{
+    text-align: center;
 }
 
