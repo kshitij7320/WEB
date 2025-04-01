@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/vendors/css/10cols.css" />
     <link rel="stylesheet" href="/vendors/css/11cols.css" />
 
-    <link rel="stylesheet" href="/vendors/css/html5reset.css" />
+     <!-- //<link rel="stylesheet" href="/vendors/css/html5reset.css" /> -->
     <link rel="stylesheet" href="/vendors/css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,16 +63,16 @@
     </header>
     <section class="section-features">
       <div class="row-r">
-        <h2>Get Food Fast - Not Fast Food</h2>
-        <p>
+        <h2>Get Food Fast &mdash; Not Fast Food</h2>
+        <p class="long-copy">
           Hello,we're omnifood,your new premium food delivery service.We know
           you're always busy.No time for cooking. So let us take care of that,
           we're really good at it,we promise!
         </p>
       </div>
       <div class="row">
-        <div class="col span_1_of_4">
-          <ion-icon name="infinite-outline"></ion-icon>
+        <div class="col span_1_of_4 box">
+          <ion-icon class="icon-big" name="infinite-outline"></ion-icon>
           <h3>Up to 365 days/year</h3>
           <p>
             Never cook again! We really mean that. Our subscription plans
@@ -80,7 +80,8 @@
             more flexibly if that's your style.
           </p>
         </div>
-        <div class="col span_2_of_4">
+        <div class="col span_2_of_4 box">
+            <ion-icon class="icon-big" name="alarm-outline"></ion-icon>
           <h3>!Ready in 20minutes</h3>
           <p>
             You are only 20 minutes away from your delicious and super healthy
@@ -88,15 +89,16 @@
             the town to ensure that you get the best meal.
           </p>
         </div>
-        <div class="col span_3_of_4">
+        <div class="col span_3_of_4 box">
+            <ion-icon class="icon-big" name="leaf-outline"></ion-icon>
           <h3>!100% organic</h3>
           <p>
             All our vegetables are fresh,organic and local.Animals are raised
             without added hormones or antibiotics.
           </p>
         </div>
-        <div class="col span_4_of_4">
-          <ion-icon name="infinite-outline"></ion-icon>
+        <div class="col span_4_of_4 box">
+            <ion-icon class="icon-big" name="cart-outline"></ion-icon>
           <h3>!Order Anything</h3>
           <p>
             We don't limit your creativity,which means you can order whatever
@@ -106,6 +108,82 @@
         </div>
       </div>
       
+    </section>
+    <section class="section-meals">
+        <ul class="meal-list clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="/resources/img/1.jpg" alt="food-image">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="/resources/img/2.jpg" alt="food-image">
+                </figure>
+
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="/resources/img/3.jpg" alt="food-image">
+                </figure>
+
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="/resources/img/4.jpg" alt="food-image">
+                </figure>
+            </li>
+        </ul>
+        <ul class="meal-list clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="/resources/img/5.jpg" alt="food-image">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="/resources/img/6.jpg" alt="food-image">
+                </figure>
+
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="/resources/img/7.jpg" alt="food-image">
+                </figure>
+
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="/resources/img/8.jpg" alt="food-image">
+                </figure>
+            </li>
+        </ul>
+    </section>
+    <section class="section-steps">
+        <div class="row-r">
+            <h2>How It Works &mdash; simple as 1,2,3</h2>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_2 steps-box">
+                <img src="/resources/img/app-iPhone.png" class="app-screen" alt="phone-image">
+            </div>
+            <div class="col span_1_of_2 steps-box">
+                <div class="works-step">
+                    <div>1</div>
+                    <p>Choose your favorite plan and sign up today</p>
+                </div>
+                <div class="works-step">
+                    <div>2</div>
+                    <p>Pay for the plan and download the app</p>
+                </div>
+                <div class="works-step">
+                    <div>3</div>
+                    <p>You are done start ordering</p>
+                </div>
+                <a href="#" class="btn-app"><img src="/resources/img/download-app.svg" alt="App store"></a>
+                <a href="#" class="btn-app"><img src="/resources/img/download-app-android.png" alt="Google play"></a>
+            </div>
+        </div>
     </section>
   </body>
 </html>

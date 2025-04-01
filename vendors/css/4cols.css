@@ -3,6 +3,7 @@
 	
 .span_4_of_4 {
 	width: 25%; 
+	padding-top: 21px;
 }
 
 .span_3_of_4 {
@@ -17,7 +18,7 @@
 
 .span_1_of_4 {
 	width: 25%; 
-	height: 10%;
+	padding-top: 21px;
 }
 
 
