@@ -18,6 +18,7 @@ html{
 }
 header {
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.7)), url('img/hero.jpg');
+    background-attachment: fixed;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -104,10 +105,12 @@ h1 {
 .row{
     display: flex;
     text-align: center;
-    justify-content: flex-start;
+    justify-content: flex;
     width: auto;
     padding-top: 30px;
     padding-bottom: 50px;
+    
+
 }
 .row-r{
     text-align: center;
@@ -242,4 +245,117 @@ h3{
     display: block;
     height: 0;
     visibility: hidden;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.city-feature{
+    margin-bottom: 5px;
+
+}
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+a:link,
+a:visited{
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;
+}
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s,color 0.5s;
+}
+.btn-app:link,
+.btn-app:visited{
+    border: 0;
+}
+.section-testimonials{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    margin-top: 40px;
+    position: relative;
+}
+cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 25px;
+}
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+blockquote::before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -3px;
+}
+.section-plans{
+    background-color: #f4f4f4;
+
+}
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+
+}
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+.plan-price-meal{
+    font-size: 80%;
+}
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+
+}
+.plan-box ul{
+    list-style: none;
+}
+.plan-box ul li{
+    padding: 3px 0;
+}
+.plan-box div:last-child{
+    border: 0;
+    text-align: center;
+}
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
