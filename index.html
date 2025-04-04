@@ -336,17 +336,180 @@
                     </div>
                     <div>
                         <ul>
-                            // Add hash (#) to URL when done scrolling (default click behavior)
-                            window.location.hash = hash;
-                          });
-                        } // End if
-                      });
-                    });
-                    </script>
-                      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-                      <script>
-                        AOS.init();
-                      </script>
-              </body>
-            </html>
-            
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>1 meal 10 day
+                            </li>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24x7
+                            </li>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Access to the n ewest creations
+                            </li>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Free Delivery
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-ghost">Sign up</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span_3_of_3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Starter</h3>
+                        <p class="plan-price">
+                            $19<span>/meal</span>
+                        </p>
+                        <p class="plan-price-meal">
+                            &nbsp;
+                        </p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>1 meal month
+                            </li>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24x7
+                            </li>
+                            <li>
+                                <ion-icon class="icon-small" name="close-outline"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Free Delivery
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-ghost">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-form" id="signup">
+        <div class="row-r">
+            <h2>We're happy to hear from you</h2>
+
+        </div>
+        <div class="row">
+            <form action="#" method="post" class="contact-form">
+                <div class="row">
+                    <div class="col span_1_of_3">   
+                        <label>Name</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">   
+                        <label>Email</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">   
+                        <label>How did you find us ?</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <select name="find-us" id="find-us">
+                            <option value="friends" id="friends">Friends</option>
+                            <option value="search-engine" id="search-engine">Search Engine</option>
+                            <option value="ad" id="ads">Advertisement</option>
+                            <option value="other" id="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">   
+                        <label>Newsletter</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="checkbox" name="news" id="news" checked>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">   
+                        <label>Drop a line</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <textarea name="text" id="ta" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">   
+                        <label>&nbsp</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="submit" value="send-me">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="section-footer">
+        <footer>
+            <div class="row-r">
+                <div class="col span_1_of_2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">IOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+
+                    </ul>
+                </div>
+            <div class="col span_2_of_2">
+                <ul class="social-links">
+                    <li><ion-icon class="fb" name="logo-facebook"></ion-icon></li>
+                    <li><ion-icon class="tw" name="logo-twitter"></ion-icon></li>
+                    <li><ion-icon class="g" name="logo-google"></ion-icon></li>
+                    <li><ion-icon class="insta" name="logo-instagram"></ion-icon></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row-r">
+            <p>Copyright &copy: 2015 by omnifood all right reserved.</p>
+        </div>
+
+        </footer>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init();
+          </script>
+  </body>
+</html>
